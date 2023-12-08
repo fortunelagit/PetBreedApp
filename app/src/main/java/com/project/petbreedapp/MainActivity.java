@@ -27,11 +27,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+import org.tensorflow.lite.task.vision.classifier.Classifications;
+import org.tensorflow.lite.task.vision.classifier.ImageClassifier;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.List;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
@@ -115,12 +119,11 @@ public class MainActivity extends AppCompatActivity {
 
             // Save the captured image to the gallery
             saveImageToGallery(image);
-
-            // Convert bitmap to file
-            File imageFile = bitmapToFile(image);
-
-            // Upload the file using Retrofit
-            uploadFile(imageFile);
+//            // Convert bitmap to file
+//            File imageFile = bitmapToFile(image);
+//
+//            // Upload the file using Retrofit
+//            uploadFile(imageFile);
         }
         else if(requestCode == SELECT_PICTURE){
             Uri selectedImageUri = data.getData();
@@ -136,6 +139,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+//    private void classifyImage(Bitmap image){
+//
+//    }
 
     private File bitmapToFile(Bitmap bitmap) {
         try {

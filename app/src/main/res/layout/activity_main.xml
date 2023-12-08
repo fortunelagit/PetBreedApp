@@ -14,7 +14,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="10dp"
-        android:id="@+id/ivShowImage"/>
+        android:id="@+id/ivShowImage"
+        android:src="@drawable/new_homepage"/>
 
     <TextView
         android:layout_width="wrap_content"
