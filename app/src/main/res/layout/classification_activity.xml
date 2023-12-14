@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ClassificationActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:tint="#03A9F4"
+        android:layout_gravity="end"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        app:backgroundTint="@color/white"
+        app:rippleColor="#03A9F4"
+        app:srcCompat="@drawable/baseline_refresh_24"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="680dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/tvInstruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_horizontal"
+        android:text="Take a Photo or Upload a Photo"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <ImageView
+
+        android:id="@+id/ivShowImage"
+        android:layout_width="400dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/preview" />
+    <!--progress bar for loading -->
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#2196F3" />
+
+        <TextView
+            android:id="@+id/tvList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <ListView
+            android:id="@+id/lvPrediction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#7FCDF1" />
+
+
+        <TextView
+            android:id="@+id/tvList2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/lvTorchPrediction"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#7FCDF1" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/btnOpenCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#002196F3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.961"
+            app:srcCompat="@drawable/dslr_camera" />
+
+        <ImageButton
+            android:id="@+id/btnUploadPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#002196F3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.877"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.961"
+            app:srcCompat="@drawable/upload" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

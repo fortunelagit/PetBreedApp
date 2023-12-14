@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- res/values/colors.xml -->
+<!--    <color name="brownPrimary">#795548</color>-->
+<!--    <color name="brownPrimaryDark">#5D4037</color>-->
+<!--    <color name="brownAccent">#A1887F</color>-->
 </resources>

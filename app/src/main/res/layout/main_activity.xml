@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNext"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:tint="#03A9F4"
+        android:layout_gravity="end"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        app:backgroundTint="@color/white"
+        app:rippleColor="#03A9F4"
+        app:srcCompat="@android:drawable/ic_media_ff"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="680dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="205dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center|top"
+        android:text="Kewan "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="54sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center|top"
+        android:text="Ku"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#02daff"
+        android:textSize="54sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="289dp"
+        android:layout_height="94dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Cat and Dog Breed Recognition Application Based on Artificial Intelligence"
+        android:textColor="#473931"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/home"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,7 +11,7 @@ import retrofit2.http.Part;
 public interface ApiService {
 
     @Multipart
-    @POST("/")
+    @POST("/breed-api")
     Call<ResponseBody> uploadImage(@Part MultipartBody.Part file);
 }
 
